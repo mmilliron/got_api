@@ -12,73 +12,79 @@ html, body {
   height: 100%;
 }
 
-a {
-  color:  #45a049;
-  text-decoration: none;
-}
 
 body {
+  background-image: url('background.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  background: whitesmoke
+}
+/* Style the header */
+header.banner {
+  margin: auto;
+  font-family: 'Cinzel Decorative', cursive;
+  background-color: rgb(180, 180, 180, .7);
+  text-align: center;
+  width: 70%;
+  border-radius: 20px;
+  color: rgb(80, 93, 107);
+  overflow: hidden;
+  padding: 20px 10px;
+  margin-top: 30px;
 }
 
-.banner {
-    font-family: 'Roboto Mono', monospace;
+button {
+    width: 100px;
+    background-color:  rgb(75, 74, 74);
     color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 14px 20px;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
- .banner h1 {
-    position: absolute;
-    top: 150px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
 
-
-
-  .container {
+.container {
+      margin-top: 30px;
       font-family: 'Roboto', sans-serif; 
       display: flex;
       justify-content: center;
       margin-bottom: 30px;
       border-radius: 5px;
-      background-color: gray;
       padding: 20px;
       margin-left: auto; 
       margin-right: auto; 
   }
 
-  input[type=text], select {
+input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 15px;
     box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+    background-color:  rgb(180, 180, 180, .9)
 
-  .results-list li {
-    margin-top: 15px;
   }
   
+ 
+
+  .results {
+    font-size: 25px;
+    font-weight: 700;
+    margin: auto;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    color: rgb(128, 143, 160);
+    overflow: hidden;
+    padding: 20px 10px;
+    margin-top: 30px;
+  }
