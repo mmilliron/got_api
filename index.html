@@ -4,25 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="Search for National Parks in your state.">
+        <meta name="description" content="Research Game of Thrones characters">
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700&display=swap" rel="stylesheet">
         <title>Learn About Game of Thrones Characters</title>
     </head>
     <body>
         <header class='banner'>
-           <h1>Find Your Favorite Character</h1>
+           <h1>Research Your Favorite GOT Characters</h1>
         </header>
-        <div class="container">
+       <div class="container">
             <form class="js-form">
-                <input type="text" name="search-term" class="js-search-term" placeholder="Jon Snow" required>
-                <button type="submit">Submit</button>
+                <input type="text" name="search-term" class="js-search-term" placeholder="Ex: Jon Snow" required autocomplete="off">
+                <button type="submit"><strong>Submit</strong></button>
             </form>
         </div>
         <div>
             <p class="js-error"></p>
 
-            <section class="results hidden" role="region">
+            <section class="results" role="region">
                 <h2></h2>
                 <ul class="results-list">
                 </ul>
