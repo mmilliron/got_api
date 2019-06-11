@@ -2,89 +2,123 @@
 font-family: 'Roboto', sans-serif;*/
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-
-body {
-  background-image: url('background.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-}
-/* Style the header */
-header.banner {
-  margin: auto;
-  font-family: 'Cinzel Decorative', cursive;
-  background-color: rgb(180, 180, 180, .7);
-  text-align: center;
-  width: 70%;
-  border-radius: 20px;
-  color: rgb(80, 93, 107);
-  overflow: hidden;
-  padding: 20px 10px;
-  margin-top: 30px;
-}
-
-button {
-    width: 100px;
-    background-color:  rgb(75, 74, 74);
-    color: whitesmoke;
-    padding: 14px 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  
+  body {
+    background-image: url('background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* Style the header */
+  header.banner {
     margin: auto;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-
-.container {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    background-color: rgb(180, 180, 180, .7);
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    color: rgb(80, 93, 107);
+    overflow: hidden;
+    padding: 20px 10px;
+    margin-top: 30px;
+  }
+  
+  button {
+      width: 100px;
+      background-color:  rgb(75, 74, 74);
+      color: whitesmoke;
+      padding: 14px 20px;
+      margin: auto;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  
+  .container {
+        margin-top: 30px;
+        font-family: 'Roboto', sans-serif; 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+  
+  input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      box-sizing: border-box;
+      background-color:  rgb(180, 180, 180, .9)
+  
+    }
+    
+   
+  
+    .results {
+      font-size: 25px;
+      font-weight: 700;
+      margin: auto;
+      font-family: 'Cinzel Decorative', cursive;
+      text-align: center;
+      width: 70%;
+      border-radius: 20px;
+      color: rgb(128, 143, 160);
+      overflow: hidden;
+      padding: 20px 10px;
       margin-top: 30px;
-      font-family: 'Roboto', sans-serif; 
+    }
+  
+    #videoResults {
+      margin-top: 100px;
+      font-family: 'Cinzel Decorative', cursive; 
+      font-size: 25px;
+      font-weight: 700;
+      color: rgb(80, 93, 107);
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-content: center;
       margin-bottom: 30px;
       border-radius: 5px;
       padding: 20px;
       margin-left: auto; 
       margin-right: auto; 
-  }
-
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    box-sizing: border-box;
-    background-color:  rgb(180, 180, 180, .9)
-
-  }
+    }
   
- 
-
-  .results {
-    font-size: 25px;
-    font-weight: 700;
-    margin: auto;
-    font-family: 'Cinzel Decorative', cursive;
-    text-align: center;
-    width: 70%;
-    border-radius: 20px;
-    color: rgb(128, 143, 160);
-    overflow: hidden;
-    padding: 20px 10px;
-    margin-top: 30px;
-  }
+    #videos{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+  
+    .result-title {
+      justify-content: center;
+    }
+  
+   /* iframe {
+      width: 80%;
+      height: 500px;
+    }
