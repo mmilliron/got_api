@@ -104,7 +104,7 @@ function displayYoutubeSearchData(data){
             if (counter == 2){ //if counter reaches two then row is done so it resets everything
                 resultElement += "</div>";
                 $("#videoResults").append(resultElement);
-                resultElement = "#videoResults";
+                //resultElement = "#videoResults";//
                 counter = 0;
             }
         });
