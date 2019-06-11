@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="Research Game of Thrones characters">
-        <link rel="stylesheet" href="main.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700&display=swap" rel="stylesheet">
-        <title>Learn About Game of Thrones Characters</title>
-    </head>
-    <body>
-        <header class='banner'>
-           <h1>Research Your Favorite GOT Characters</h1>
-        </header>
-       <div class="container">
-            <form class="js-form">
-                <input type="text" name="search-term" class="js-search-term" placeholder="Ex: Jon Snow" required autocomplete="off">
-                <button type="submit"><strong>Submit</strong></button>
-            </form>
-        </div>
-        <div>
-            <p class="js-error"></p>
-
-            <section class="results" role="region">
-                <h2></h2>
-                <ul class="results-list">
-                </ul>
-            </section>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="index.js"></script>
-    </body>
-</html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="description" content="Research Game of Thrones characters">
+            <link rel="stylesheet" href="main.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700&display=swap" rel="stylesheet">
+            <title>Learn About Game of Thrones Characters</title>
+        </head>
+        <body>
+            <header class='banner'>
+               <h1>Research Your Favorite Game of Thrones Characters</h1>
+            </header>
+           <div class="container">
+                <form class="js-form">
+                   <!-- <input type="text" name="search-term" class="js-search-term" placeholder="Ex: Jon Snow" required autocomplete="off">-->
+                    <select id="Character"  type="text" name="search-term" class="js-search-term" placeholder="Ex: Jon Snow" required autocomplete="off">
+                        <option value="Jon Snow">Jon Snow</option>
+                        <option value="Eddard Stark">Eddard Stark</option>
+                        <option value="Robb Stark">Robb Stark</option>
+                        <option value="Sansa Stark">Sansa Stark</option>
+                        <option value="Arya Stark">Arya Stark</option>
+                        <option value="Theon Greyjoy">Theon Greyjoy</option>
+                        <option value="Cersei Lannister">Cersei Lannister</option>
+                        <option value="Jaime Lannister">Jaime Lannister</option>
+                        <option value="Tyrion Lannister">Tyrion Lannister</option>
+                        <option value="Jorah Mormont">Jorah Mormont</option>
+                    </select>
+                    <button type="submit"><strong>Submit</strong></button>
+                </form>
+            </div>
+            <div>
+                <p class="js-error"></p>
+    
+                <section class="results" role="region">
+                    <h2></h2>
+                    <ul class="results-list">
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section id="videos">
+                        <h2></h2>
+                        <ul id="videoResults">
+                        </ul>
+                </section>
+            </div> 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script src="index.js"></script>
+        </body>
+    </html>
