@@ -92,7 +92,7 @@ function displayYoutubeSearchData(data){
             "<div class=\'col-sm-12 col-lg-6 result\'>" + 
                 "<div class=\"item-container\">" + //sets bootstrap div and then a div inside of it
           '<div class=\'result-title\'><span>' + item["snippet"]["title"] + '<span></div>' + //places title of video above video
-          '<iframe src=\'https://www.youtube.com/embed?v=" + item["id"]["videoId"] + "\' data-lity> width="1000" height="700" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+           '<iframe src=\'https://www.youtube.com/embed?v=' + item["id"]["videoId"] + "\' data-lity width='1000' height='700' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
                     //"<embed src=\'https://www.youtube.com/watch?v=" + item["id"]["videoId"] + "\' data-lity>"+ //creates hyperlink to lightbox around thumbnail
                     "<img src=\'" + item["snippet"]["thumbnails"]["high"]["url"] + '\'>' + //places high-res thumbnail
                     '</a>'+
