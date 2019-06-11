@@ -11,7 +11,7 @@ function displayResults(responseJson) {
     // Clearing previous results
     $('.js-error-message').empty();
     $('.results-list').empty();
-    // Looping through the response and formatting results
+    // Results
     $('.results').removeClass('hidden');
     $('.results-list').append(`<li>${responseJson[0].name}</li>`);
     $('.results-list').append(`<li> Born: ${responseJson[0].born}</li>`);
@@ -29,8 +29,9 @@ function getCharacters(baseUrl, charArr) {
     const queryString = formatQueryParams(params);
     const url = baseUrl + '?' + queryString;
     console.log(url);
-   
-  
+
+
+
   // Fetch information, if there's an error display a message
   fetch(url)
   .then(response => {
@@ -45,7 +46,7 @@ function getCharacters(baseUrl, charArr) {
   });
 }
 
-// Watch search form for submit, call getParks
+// Watch search form for submit
 function watchForm() {
     $('.js-form').on('submit', function() {
         event.preventDefault();
@@ -55,7 +56,13 @@ function watchForm() {
     })
 }
 
+
+
+
+
 $(watchForm);
+
+
 
 var YOUTUBE_BASE_URL = "https://www.googleapis.com/youtube/v3/search";
 var nextPageToken = null;
@@ -92,7 +99,7 @@ function displayYoutubeSearchData(data){
             "<div class=\'col-sm-12 col-lg-6 result\'>" + 
                 "<div class=\"item-container\">" + //sets bootstrap div and then a div inside of it
           '<div class=\'result-title\'><span>' + item["snippet"]["title"] + '<span></div>' + //places title of video above video
-           '<iframe src=\'https://www.youtube.com/embed?v=' + item["id"]["videoId"] + "\' data-lity width='1000' height='700' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+          '<iframe src=\'https://www.youtube.com/embed/' + item["id"]["videoId"] + "\' data-lity width='1000' height='700' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
                     //"<embed src=\'https://www.youtube.com/watch?v=" + item["id"]["videoId"] + "\' data-lity>"+ //creates hyperlink to lightbox around thumbnail
                     "<img src=\'" + item["snippet"]["thumbnails"]["high"]["url"] + '\'>' + //places high-res thumbnail
                     '</a>'+
