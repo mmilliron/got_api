@@ -92,7 +92,9 @@ function getDataFromAPI(searchTerm, callback, t){
 function displayYoutubeSearchData(data){
     var resultElement= "<div class=\"row\">";
     var counter = 0; //allows control for how many results go into each row
-    //$("#js-all-results").empty();
+    $('#videoResults').empty();
+    // Results
+    $('#videos').removeClass('hidden');
     if (data.items){
         data.items.forEach(function(item){
             resultElement += //adds below code for each item in the json file
